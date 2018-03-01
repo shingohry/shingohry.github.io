@@ -45,4 +45,4 @@
 <h1 id="contact">連絡先</h1>
 
 - [Twitter](https://twitter.com/shingohry)
-- [GitHub](https://github.com/hirayaCM)
+- [GitHub](https://github.com/shingohry)
