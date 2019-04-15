@@ -26,7 +26,7 @@
 
 ## Blog
 - [平屋真吾 - Developers.IO](http://dev.classmethod.jp/author/hiraya-shingo/)
-- [hirayaCM - Qiita](http://qiita.com/hirayaCM)
+- [shingohry - Qiita](http://qiita.com/shingohry)
 
 ## Contributed articles
 - [こっそり始めるGit／GitHub超入門 - ＠IT](http://www.atmarkit.co.jp/ait/series/3190/index.html)
