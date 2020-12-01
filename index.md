@@ -3,6 +3,7 @@
 <li><a href="#works">Products</a></li>
 <li><a href="#writing">Writing</a></li>
 <li><a href="#presentation">Presentations</a></li>
+<li><a href="#certifications">Achieved Certifications</a></li>
 <li><a href="#contact">Contacts</a></li>
 </ul>
 
@@ -10,6 +11,8 @@
 <h1 id="works">Products</h1>
 
 ## iOS Apps
+- [SS'19 Timetable](https://apps.apple.com/jp/app/ss19-timetable/id1476434098)
+    - App for participants of music festival "SUMMER SONIC 2019".
 - [LIB18](https://itunes.apple.com/jp/app/lib18/id1435507746?mt=8)
     - App for participants of music festival "Life is Beautiful Music & Art Festival 2018".
 - [SS'18 Timetable](https://itunes.apple.com/jp/app/ss18-timetable/id1422468278?mt=8)
@@ -36,8 +39,8 @@
 - [Yahoo! JAPANのスマホアプリ開発で取り入れられているUI/UXデザイン技法 - CodeZine（コードジン）](https://codezine.jp/article/detail/7931)
 
 ## Books
+- [スタートダッシュiOS 〜アプリエンジニアの必須ノウハウをサクっと押さえる：書籍案内｜技術評論社](https://gihyo.jp/book/2020/978-4-297-11403-9)
 - [iOSアプリエンジニア養成読本［クリエイティブな開発のための技術力／デザイン力／マインドを養う！］ - 技術評論社](http://gihyo.jp/book/2014/978-4-7741-6385-7)
-
 
 <h1 id="presentation">Presentations</h1>
 
@@ -45,6 +48,10 @@
 - [iOS 9 Bootcamp #6 UIKit](https://www.slideshare.net/ShingoHiraya/ios-9-bootcamp-6-uikit)
 - [\[iOS 8\] iOS8勉強会 PhotoKit](https://www.slideshare.net/ShingoHiraya/20140918-i-os8photokit)
 
+<h1 id="certifications">Achieved Certifications</h1>
+
+- AWS Certified Solutions Architect - Associate (SAA)
+- AWS Certified Developer - Associate (DVA)
 
 <h1 id="contact">Contacts</h1>
 
