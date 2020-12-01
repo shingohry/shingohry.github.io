@@ -27,6 +27,10 @@
 
 <h1 id="writing">Writing</h1>
 
+## Books
+- [スタートダッシュiOS 〜アプリエンジニアの必須ノウハウをサクっと押さえる：書籍案内｜技術評論社](https://gihyo.jp/book/2020/978-4-297-11403-9)
+- [iOSアプリエンジニア養成読本［クリエイティブな開発のための技術力／デザイン力／マインドを養う！］ - 技術評論社](http://gihyo.jp/book/2014/978-4-7741-6385-7)
+
 ## Blog
 - [平屋真吾 - Developers.IO](http://dev.classmethod.jp/author/hiraya-shingo/)
 - [shingohry - Qiita](http://qiita.com/shingohry)
@@ -37,10 +41,6 @@
 - [「iPhone 6／6 Plusアプリ開発入門」最新記事一覧 - ＠IT](http://www.atmarkit.co.jp/ait/kw/ios8dev.html)
 - [DeNAのスマホアプリのUX向上に活かされている技術とアイデア - CodeZine（コードジン）](https://codezine.jp/article/detail/7932)
 - [Yahoo! JAPANのスマホアプリ開発で取り入れられているUI/UXデザイン技法 - CodeZine（コードジン）](https://codezine.jp/article/detail/7931)
-
-## Books
-- [スタートダッシュiOS 〜アプリエンジニアの必須ノウハウをサクっと押さえる：書籍案内｜技術評論社](https://gihyo.jp/book/2020/978-4-297-11403-9)
-- [iOSアプリエンジニア養成読本［クリエイティブな開発のための技術力／デザイン力／マインドを養う！］ - 技術評論社](http://gihyo.jp/book/2014/978-4-7741-6385-7)
 
 <h1 id="presentation">Presentations</h1>
 
