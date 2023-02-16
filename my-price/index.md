@@ -49,4 +49,4 @@ title: ShingoHiraya.biz
 - ¥6250/h
 
 # 連絡先
-- Twitter: https://twitter.com/shingohry
+- Twitter: [https://twitter.com/shingohry](https://twitter.com/shingohry)
