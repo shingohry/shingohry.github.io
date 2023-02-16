@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Shingo Hiraya
+title: ShingoHiraya
 ---
 
 # Contents 
