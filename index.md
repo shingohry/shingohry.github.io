@@ -1,3 +1,7 @@
+---
+title: Shingo Hiraya
+---
+
 # Contents 
 <ul>
 <li><a href="#certifications">Achieved Certifications</a></li>
