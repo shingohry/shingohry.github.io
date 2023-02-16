@@ -33,7 +33,7 @@ title: ShingoHiraya.biz
         - 期間: 1ヶ月〜5年ぐらい
         - チーム: 1〜9名ぐらい
 - 執筆
-    - ブログ: [平屋真吾 | DevelopersIO](https://dev.classmethod.jp/author/hiraya-shingo/)
+    - ブログ: [平屋真吾 - DevelopersIO](https://dev.classmethod.jp/author/hiraya-shingo/)
     - 書籍: [スタートダッシュiOS 〜アプリエンジニアの必須ノウハウをサクっと押さえる](https://gihyo.jp/book/2020/978-4-297-11403-9)
 - 個人でリリースしたアプリ
     - [Shingo HirayaのAppをApp Storeで](https://apps.apple.com/jp/developer/shingo-hiraya/id495072964)
