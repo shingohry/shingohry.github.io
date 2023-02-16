@@ -40,11 +40,11 @@ title: Shingo Hiraya
 ## iOS Apps
 - [SS'19 Timetable](https://apps.apple.com/jp/app/ss19-timetable/id1476434098)
     - App for participants of music festival "SUMMER SONIC 2019".
-- [LIB18](https://itunes.apple.com/jp/app/lib18/id1435507746?mt=8)
+- ~~LIB18~~ (Developer removed from sale)
     - App for participants of music festival "Life is Beautiful Music & Art Festival 2018".
-- [SS'18 Timetable](https://itunes.apple.com/jp/app/ss18-timetable/id1422468278?mt=8)
+- ~~SS'18 Timetable~~ (Developer removed from sale)
     - App for participants of music festival "SUMMER SONIC 2018".
-- [Tables - 授業管理アプリ](https://itunes.apple.com/jp/app/tables-%E6%8E%88%E6%A5%AD%E7%AE%A1%E7%90%86%E3%82%A2%E3%83%97%E3%83%AA/id1286724907?mt=8)
+- ~~Tables - 授業管理アプリ~~ (Developer removed from sale)
     - App for student's timetable management
 - [Here I am](https://itunes.apple.com/jp/app/here-i-am/id1143913696?mt=8)
     - iMessage app for sharing your current location and direction
