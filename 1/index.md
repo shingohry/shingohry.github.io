@@ -32,9 +32,9 @@ Hugo + Github Pages / Actions を使って本ブログを作りました。
         - https://github.com/peaceiris/actions-hugo#getting-started
     - `Setup Hugo`ステップで`extended: true`を指定
 
-環境構築したあとは、Markdownファイルをリポジトリにpushすれば、記事を公開できます。
+環境構築したあとは、Markdownファイルをリポジトリにpushすれば、Actionsで静的コンテンツの生成とデプロイが行われ、記事を公開できます。
 
-↓最終的にどうなったかはこちらのリポジトリで確認できます。
+↓設定ファイル等が最終的にどうなったかはこちらのリポジトリで確認できます。
 
 - https://github.com/shingohry/shingohry.github.io
 
