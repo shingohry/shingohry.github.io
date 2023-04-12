@@ -10,4 +10,4 @@ hugo.darwin
 hugo.linux
 
 # Temporary lock file while building
-hugo-sample/.hugo_build.lock
+.hugo_build.lock
