@@ -8,3 +8,4 @@
 - `{file name}.md`ファイル修正
     - メタ情報の draft を削除するか、falseにする
 - mdファイルをリモートリポジトリにpush
+    - `$ git push origin master`
