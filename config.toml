@@ -16,8 +16,8 @@ languageName = "Japanese"
 hasCJKLanguage = true
 # default amount of posts in each pages
 paginate = 12
-# google analytics code [UA-XXXXXXXX-X]
-googleAnalytics = "G-994WR0PHNF"
+# # google analytics code [UA-XXXXXXXX-X]
+# googleAnalytics = ""
 # copyright description used only for seo schema
 copyright = "shingohry"
 # # whether to use robots.txt
@@ -503,14 +503,14 @@ enableEmoji = true
 #     # thumbnail URL
 #     thumbnailUrl = "/images/screenshot.png"
 
-#   # Analytics config
-#   [params.analytics]
-#     enable = false
-#     # Google Analytics
-#     [params.analytics.google]
-#       id = ""
-#       # whether to anonymize IP
-#       anonymizeIP = true
+  # Analytics config
+  [params.analytics]
+    enable = true
+    # Google Analytics
+    [params.analytics.google]
+      id = "G-994WR0PHNF"
+      # whether to anonymize IP
+      anonymizeIP = true
 
 #     # Fathom Analytics
 #     [params.analytics.fathom]
