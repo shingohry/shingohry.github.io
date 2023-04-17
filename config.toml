@@ -16,8 +16,8 @@ languageName = "Japanese"
 hasCJKLanguage = true
 # default amount of posts in each pages
 paginate = 12
-# # google analytics code [UA-XXXXXXXX-X]
-# googleAnalytics = ""
+# google analytics code [UA-XXXXXXXX-X]
+googleAnalytics = "G-994WR0PHNF"
 # copyright description used only for seo schema
 copyright = "shingohry"
 # # whether to use robots.txt
