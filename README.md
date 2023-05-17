@@ -1,4 +1,7 @@
 # shingohry.github.io
+## 初回作業
+- hugoインストール: `$ brew install hugo`
+
 ## ローカルでの作業
 - 記事作成: `$ hugo new posts/{file name}.md`
 - 起動: `$ hugo serve`
