@@ -1,0 +1,174 @@
+# WWDC 23 セッション「Meet SwiftData」メモ
+
+
+- セッションURL: https://developer.apple.com/videos/play/wwdc2023/10187/
+
+## (1) Using the model macro
+
+### @Modelマクロ
+```swift
+import SwiftData
+
+@Model
+class Trip {
+    var name: String
+    var destination: String
+    var endDate: Date
+    var startDate: Date
+ 
+    // relationshipを張ることもできる
+    var bucketList: [BucketListItem]? = []
+    var livingAccommodation: LivingAccommodation?
+}
+```
+
+* @Model : スキーマを定義するためのSwiftマクロ
+    * storedプロパティは永続化されるようになる
+* 対象にできるプロパティ
+    * string、int、float などの基本的な値の型
+    * 構造体、列挙型、およびコレクションを含むコード化可能な型など、より複雑な値型
+* クラスへの参照、コレクションを使って relationshipを貼れる
+    * コード例の中のbucketList, livingAccommodation
+
+### メタデータ
+```swift
+@Model
+class Trip {
+    // @Attribute を使って 一意であるように指定
+    @Attribute(.unique) var name: String
+    var destination: String
+    var endDate: Date
+    var startDate: Date
+ 
+    // @Relationshipを使って、Tripが削除されると、配列の要素も削除するように指定
+    @Relationship(.cascade) var bucketList: [BucketListItem]? = []
+    var livingAccommodation: LivingAccommodation?
+}
+```
+
+* メタデータ(@Attribute, @Relationshipなど) を使用して、スキーマをカスタマイズできる
+* モデリングに関する関連セッション: [Model your schema with SwiftData](https://developer.apple.com/videos/play/wwdc2023/10195)
+
+## (2) Working with your data
+
+* Modelの操作を実行するために使用する 2 つの主要なオブジェクト
+    * ModelContainer
+    * ModelContext
+
+### ModelContainer
+```swift
+// 扱いたいModelを指定してContainerを生成する
+// Initialize with only a schema
+let container = try ModelContainer([Trip.self, LivingAccommodation.self])
+
+// containerの生成例 (option指定あり)
+// Initialize with configurations
+let container = try ModelContainer(
+    for: [Trip.self, LivingAccommodation.self],
+    configurations: ModelConfiguration(url: URL("path"))
+)
+
+// SwiftUIでcontainerを使う場合はmodifierを使う
+import SwiftUI
+@main
+struct TripsApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+        .modelContainer(
+            for: [Trip.self, LivingAccommodation.self]
+        )
+    }
+}
+```
+
+* ModelContainer: Modelの永続化のバックエンドを提供
+
+### ModelContext
+```swift
+// SwiftUIの場合: 
+// modifierを使ってcontainerをセットアップ済みの場合はEnvironmentからModelContextを取得できる
+struct ContextView : View {
+    @Environment(\.modelContext) private var context
+}
+
+// SwiftUI以外の場合
+let context = ModelContext(container)
+```
+
+* ModelContext: モデルへのすべての変更を監視し、それらを操作するための多くのアクションを提供
+* アクション: 更新の追跡、データの取得、変更の保存、変更の取り消しなど
+
+### Predicate
+```swift
+// predicateを作る
+// Predicateマクロを使ってpredicateを作れる
+// NSPredicateをモダンにしたやつ、型指定できる、オートコンプリート使える
+let today = Date()
+let tripPredicate = #Predicate<Trip> { 
+    $0.destination == "New York" && // 目的地がニューヨーク
+    $0.name.contains("birthday") && // 誕生日に関する旅行
+    $0.startDate > today // 開始日が将来
+}
+
+// fetchする
+let descriptor = FetchDescriptor<Trip>(predicate: tripPredicate)
+let trips = try context.fetch(descriptor)
+
+// fetchする (sort指定あり)
+let descriptor = FetchDescriptor<Trip>(
+    sortBy: SortDescriptor(\Trip.name),
+    predicate: tripPredicate
+)
+let trips = try context.fetch(descriptor)
+```
+
+### データの追加、削除、保存
+```swift
+var myTrip = Trip(name: "Birthday Trip", destination: "New York")
+
+// データの作成
+context.insert(myTrip)
+
+// 削除
+context.delete(myTrip)
+
+// 保存
+try context.save()
+
+// モデル オブジェクトのプロパティ値の変更は、通常のようにプロパティ セッターを使用するのと同じくらい簡単
+// Model マクロは、保存されたプロパティを変更して、ModelContext が変更を自動的に追跡し、次回の保存操作にその変更を含められるようにする
+@Model
+class Trip {
+    @Attribute(.unique) var name: String
+
+    // ...
+}
+```
+
+* コンテナーとコンテキスト、およびその操作の詳細に関するセッション: [Dive Deeper into SwiftData](https://developer.apple.com/videos/play/wwdc2023/10196/)
+
+## (3) Use SwiftData with SwiftUI
+
+```swift
+struct ContentView: View  {
+    // @Query プロパティ ラッパーを使用して、保存されているデータを取得
+    @Query(sort: \.startDate, order: .reverse) var trips: [Trip]
+    
+    // ...
+}
+```
+
+* SwiftData は SwiftUI を念頭に置いて構築されており、組み合わせて使用するのはとても簡単
+* SwiftData は、モデル化されたプロパティのまったく新しい監視可能な機能をサポート (@Publishedは付与しなくて良い)
+* SwiftUI と SwiftData を併用したアプリの構築セッション: [Build an app with SwiftData](https://developer.apple.com/videos/play/wwdc2023/10154/)
+
+## (4) Wrap-up
+
+* SwiftData は、Swift の機能に対する最上級のサポートを備えて設計された、データ管理の強力な新しいソリューション
+* Swift の新しいマクロ システムを使用して、コードに完全に焦点を当てる
+    * @model を使用してスキーマを設定し、モデル コンテナーを使用して永続性エクスペリエンスを構成
+    * 永続化、元に戻すとやり直し、iCloud 同期、ウィジェット開発などを簡単に有効にできる
+* SwiftUI のシームレスな統合を活用して、アプリへの SwiftData の構築をすぐに開始できる
+
