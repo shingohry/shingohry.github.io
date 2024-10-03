@@ -37,6 +37,7 @@
 
 ## 執筆
 - Blog
+    - [Shingo Hiraya - Medium](https://medium.com/@shingo.318) 
     - [平屋真吾 - DevelopersIO](https://dev.classmethod.jp/author/hiraya-shingo/)
 - 書籍
     - [スタートダッシュiOS 〜アプリエンジニアの必須ノウハウをサクっと押さえる：書籍案内｜技術評論社](https://gihyo.jp/book/2020/978-4-297-11403-9)
