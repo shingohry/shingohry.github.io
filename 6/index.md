@@ -1,0 +1,47 @@
+# iOS 26 betaのipswをiPhone 14 Proにインストールできない問題と回避方法
+
+
+iOS 26 betaのipswをiPhone 14 Proにインストールできない問題と回避方法
+
+## 問題
+以下のページから`iPhone 14 Pro`向けのipswをダウンロードし、
+
+- https://developer.apple.com/download/#ios-restore-images-ipad-new
+
+Finderでインストールしようとしたが、互換性がないのでインストールできない旨のメッセージが表示された。
+
+<img src="https://shingohry.com/images/6-1.png" width="640">
+
+ファイル名のprefixが「iPhone15,3」なので、iPhone 14 Pro Max向けのものになってしまっている?
+
+- iPhone15,3_26.0_23A5260n_Restore.ipsw
+
+## 回避方法
+以下のページに記載に従い、iPhoneから直接betaをインストールする。
+
+> 1. 「設定」>「一般」>「ソフトウェアアップデート」>「ベータアップデート」の順に選択し、デベロッパベータ版を選択します。
+> 2. 新しいデベロッパベータ版が利用可能になり次第、「ソフトウェアアップデート」からインストールできます。
+> 
+> 注：ベータ版ソフトウェアにアクセスするには、Apple Developer Webサイトへのサインインで使用するApple AccountでiPhoneにサインインしている必要があります。
+> 
+> - https://developer.apple.com/jp/support/install-beta/
+
+### 手順
+1. (デベロッパモードをONにした端末を準備)
+
+2. Apple Developer Webサイトへのサインインで使用するApple AccountでiPhoneにサインイン
+
+<img src="https://shingohry.com/images/6-2.png" width="320">
+
+3. 「設定」>「一般」>「ソフトウェアアップデート」を開くと「ベータアップデート」項目が増えているので、こちらをタップ
+
+<img src="https://shingohry.com/images/6-3.PNG" width="320">
+
+4. 「ベータアップデート」を選択し、iOS 26のベータ版を選択
+
+<img src="https://shingohry.com/images/6-4.PNG" width="320">
+
+5. 前の画面に戻ると、「iOS 26のベータ」が表示されているので「今すぐアップデート」をタップ
+
+<img src="https://shingohry.com/images/6-5.PNG" width="320">
+
